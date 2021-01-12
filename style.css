@@ -23,16 +23,6 @@ body {
     flex-direction: column;
 }
 
-/* Header */
-header {
-    display: flex;
-    flex-direction: column;
-}
-
-#title {
-    flex: 1;
-}
-
 #title h1 {
     font-size: 2.2rem;
     text-align: center;
@@ -45,13 +35,6 @@ header {
     line-height: 1.8rem;
     color: hsl(303, 10%, 53%);
     font-weight: 500;
-}
-
-#rating {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
 }
 
 #rating ul {
@@ -112,21 +95,73 @@ main .review-item article {
 
 /* Responsive Settings */
 @media only screen and (min-width: 768px) {
+    .container {
+        width: 80vw;
+    }
+
     header {
-        flex-direction: row;
+        display: inline;
+    }
+
+    #title {
+        width: 40%;
+        float: left;
     }
 
     #title h1 {
         font-size: 3.5rem;
         text-align: left;
+        margin-bottom: 0.5rem;
+    }
+
+    #title p {
+        text-align: left;
+    }
+
+    #rating {
+        float: right;
+        width: 50%;
+        height: 100%;
     }
 
     #rating ul li {
-        flex-direction: row;
+        display: block;
+        padding: 1.4rem 0 1.4rem 2rem;
+        width: 80%;
+        float: right;
+    }
+
+    #rating ul li:nth-child(1) {
+        margin: 1rem 100px 10px 0;
+    }
+
+    #rating ul li:nth-child(2) {
+        margin: 1rem 50px 10px 0;
     }
 
     #rating ul li picture {
         margin: 0 2rem 0 0;
+    }
+
+    /* Main */
+    main {
+        display: inline-block;
+        margin-top: 60px;
+    }
+
+    main .review-item {
+        float: left;
+        width: 31%;
+        height: 270px;
+        text-align: left;
+        padding: 2rem;
+    }
+
+    .review-item:nth-child(2) {
+        margin: 30px 30px 0;
+    }
+    .review-item:nth-child(3) {
+        margin-top: 60px;
     }
 }
 
