@@ -86,8 +86,13 @@ body {
     border-radius: 10px;
 }
 
-#rating ul li picture {
+#rating ul li .icons {
     margin-bottom: 1rem;
+    display: inline;
+}
+
+#rating ul li h4 {
+    display: inline;
 }
 
 /* Main */
@@ -120,8 +125,10 @@ main .review-item figure figcaption p {
     color: hsl(333, 80%, 67%);
 }
 
-main .review-item article {
-    line-height: 1.8rem;
+main .review-item p {
+    line-height: 1.6rem;
+    font-size: 13px;
+    font-weight: 500;
 }
 
 /* Footer */
@@ -196,7 +203,7 @@ main .review-item article {
         margin-bottom: 0;
     }
 
-    #rating ul li picture {
+    #rating ul li .icons {
         margin: 0 2rem 0 0;
     }
 
